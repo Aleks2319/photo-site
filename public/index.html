@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Photo Blog</title>
+	<link rel="stylesheet" href="css/main.min.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="icon">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=100&auto=format&fit=crop&q=80" alt="Иконка камеры">
+            </div>
+            <div class="name">
+                <span>Photo<br><b>Blog</b></span>
+            </div>
+        </div>
+
+        <input type="text" placeholder="Поиск статей..." id="header-search-input">
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <h2>Форма поиска</h2>
+            <input type="text" placeholder="Поиск..." id="search-input">
+            <button type="button" id="close-search-btn" class="close-search-btn">Закрыть</button>
+        </div>
+    </div>
+
+    <div class="container main-layout">
+
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>3 основных правила идеального кадра в портретной съёмке</h1>
+                <p>До начала съемки важно понять, как работают свет, композиция и эмоции модели. Разбираем 3 главных шага, которые помогут вам делать выразительные и сочные портреты даже на базовую технику.</p>
+                <a href="#" class="btn btn-danger">Читать далее</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=600&auto=format&fit=crop&q=80" alt="Портретная съемка">
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            <main class="news-section">
+                <h2>Статьи и гайды</h2>
+                
+                <div class="news-grid" id="news-grid"></div>
+
+                <div class="load-more-wrapper">
+                    <button id="load-more-btn" class="btn btn-danger">Подгрузить больше</button>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <h2>Анонсы</h2>
+
+                <div class="widget widget-text">
+                    <p>Принимаю заказы на индивидуальные портретные съемки, семейные истории и репортажи в этом месяце. Осталось всего несколько свободных дат.</p>
+                </div>
+
+                <div class="widget widget-promo">
+                    <div class="widget-promo-img">
+                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=300&auto=format&fit=crop&q=80" alt="Мастер-класс">
+                    </div>
+                    <div class="widget-promo-body">
+                        <p>Набор на авторский воркшоп «Основы работы со студийным светом с нуля». Старт уже в следующую субботу!</p>
+                        <a href="#" class="btn btn-light">Узнать детали</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>PhotoBlog &copy; Все права защищены</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
